@@ -1,0 +1,10 @@
+*.o
+*.swp
+*.log
+*~
+.*
+cache
+upload
+nbproject
+bin-debug
+config.local.php
