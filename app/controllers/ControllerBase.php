@@ -55,9 +55,9 @@ abstract class ControllerBase extends \Phalcon\Mvc\Controller {
 			return FALSE;
 		}
 
-		$this->user = Accounts::findFirst(array(
-					"phone = :phone:",
-					"bind" => array('phone' => $username)
+		$this->user = Users::findFirst(array(
+				"username = :username:",
+				"bind" => array('username' => $username)
 		));
 
 		if (!$this->user) {

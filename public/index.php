@@ -7,7 +7,8 @@ try {
 
 	$loader->registerDirs(
 			array(
-				'../app/controller/'
+				'../app/controllers/',
+				'../app/models/'
 			)
 	);
 
